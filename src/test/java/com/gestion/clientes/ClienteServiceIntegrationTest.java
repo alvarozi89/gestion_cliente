@@ -31,6 +31,7 @@ public class ClienteServiceIntegrationTest {
         Cliente cliente = new Cliente();
         cliente.setNombre("Pedro");
         cliente.setClienteId("cliente123");
+        cliente.setContrasena("123456");
 
         Cliente clienteGuardado = clienteService.guardar(cliente);
         assertNotNull(clienteGuardado.getId());

@@ -16,8 +16,8 @@ public class Cliente extends Persona {
     @Column(unique = true)
     private String clienteId;
 
-    //@NotNull(message = "La contraseña es obligatoria")
-   // @Size(min = 6, message = "La contraseña debe tener al menos 6 caracteres")
+    @NotNull(message = "La contraseña es obligatoria")
+   @Size(min = 6, message = "La contraseña debe tener al menos 6 caracteres")
     private String contrasena;
 
     @NotNull(message = "El estado del cliente es obligatorio")
